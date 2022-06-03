@@ -24,7 +24,7 @@ jobs:
         
     - name: Configura Docker Buldx
       id: buildx
-      uses: docker/setup-build-action@v1
+      uses: docker/setup-buildx-action@v1
     - name: CREAR Y SUBIR IMAGEN
       id: docker_build
       uses: docker/build-push-action@v2

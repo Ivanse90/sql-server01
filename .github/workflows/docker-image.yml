@@ -32,7 +32,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tag: ${{ secrets.DOCKER_USERNAME}}//ivanser90/sql-server:clase 
+        tag: ${{ secrets.DOCKER_USERNAME}}/sql-server:clase 
         
     - name: digest de la imagen
       run: echo ${{ steps.docker_build.outputs.digest }}

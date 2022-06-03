@@ -19,8 +19,8 @@ jobs:
     - name: Login en docker hub
       uses: docker/login-action@v1
       with:
-        username: ${{sectres.DOCKER_USERNAME}}
-        password: ${{sectres.DOCKER_TOKEN}}
+        username: ${{sectrets.DOCKER_USERNAME}}
+        password: ${{sectrets.DOCKER_TOKEN}}
         
     - name: Configura Docker Buldx
       id: buildx

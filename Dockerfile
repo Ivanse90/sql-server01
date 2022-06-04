@@ -9,5 +9,3 @@ ENV ACCEPT_EULA Y
 
 #define el tipo de servidor a utilizar
 ENV MSSQL_PID Express
-iVANSER90
-Catastral22&

@@ -25,6 +25,7 @@ jobs:
     - name: Configura Docker Buldx
       id: buildx
       uses: docker/setup-buildx-action@v1
+    
     - name: CREAR Y SUBIR IMAGEN
       id: docker_build
       uses: docker/build-push-action@v2
@@ -36,6 +37,7 @@ jobs:
         
     - name: digest de la imagen
       run: echo ${{ steps.docker_build.outputs.digest }}
-      
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+ 
+# No se requiere este paso, si se usa Docker Buildx
+#   - name: Build the Docker image
+#      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
